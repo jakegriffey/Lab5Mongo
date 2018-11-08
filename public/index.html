@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Commentbook</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascripts/comments.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/comments.css" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="fb-blue">
+    <div class="container-fluid fb-blue">
+        <h1 class="centered-text white-text main-header">Commentbook</h1>
+    </div>
+
+
+    <div class="container-fluid fb-light">
+        <h2 class="centered-text">Enter a Name and a Comment to Get Started</h2>
+        <div class="form-group">
+            <form id="commentForm" action="" autocomplete="off">
+                <label for="name">Name: </label><input type="text" id="name" placeholder="Name" class="form-control"><br>
+                <label for="comment">Comment: </label><input type="text" id="comment" placeholder="Comment" class="form-control"><br>
+            </form>
+        </div>
+
+        <button id="postComment" class="btn btn-primary">Post Comment</button>
+        <button id="getComments" class="btn btn-primary">Get Comments</button>
+        <button id="deleteComments" class="btn btn-primary">Delete All</button>
+        <div id="json" class="centered-text subtext"></div>
+        <div id="done" class="centered-text subtext"></div>
+        <div id="comments" class="padded"></div>
+
+        <h2 class="centered-text">Search for Posts from a User</h2>
+        <div class="form-group">
+            <form id="userCommentForm" action="" autocomplete="off">
+                <label for="username">Username: </label><input type="text" id="username" placeholder="Username" class="form-control" /><br>
+                <button id="getUserComments" class="btn btn-primary">Find Comments</button>
+            </form>
+        </div>
+
+
+        <div id="userComments" class="padded"></div>
+    </div>
+</body>
+
+</html>
